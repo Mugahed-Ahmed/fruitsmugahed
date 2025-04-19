@@ -4,8 +4,7 @@ import 'package:fruitsmugahed/core/utils/size_config.dart';
 import 'package:fruitsmugahed/core/widgets/space_widget.dart';
 
 class CustomGeneralButton extends StatelessWidget {
-  const CustomGeneralButton({Key? key, this.text, this.onTap})
-      : super(key: key);
+  const CustomGeneralButton({super.key, this.text, this.onTap});
   final String? text;
   final VoidCallback? onTap;
   @override
@@ -37,8 +36,7 @@ class CustomGeneralButton extends StatelessWidget {
 
 class CustomButtonWithIcon extends StatelessWidget {
   const CustomButtonWithIcon(
-      {Key? key, required this.text, this.onTap, this.iconData, this.color})
-      : super(key: key);
+      {super.key, required this.text, this.onTap, this.iconData, this.color});
   final String text;
   final IconData? iconData;
   final VoidCallback? onTap;
@@ -63,7 +61,7 @@ class CustomButtonWithIcon extends StatelessWidget {
               iconData,
               color: color,
             ),
-            HorizintalSpace(2),
+            HorizintalSpace(value:2),
             Text(
               text,
               style: TextStyle(

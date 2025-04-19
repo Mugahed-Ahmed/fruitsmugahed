@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:fruitsmugahed/core/utils/size_config.dart';
 
 class HorizintalSpace extends StatelessWidget {
-  const HorizintalSpace(this.value) ;
- final double? value;
+  const HorizintalSpace({super.key, required this.value});
+  final double? value;
   @override 
   Widget build(BuildContext context) {
     return SizedBox(
@@ -13,8 +13,8 @@ class HorizintalSpace extends StatelessWidget {
 }
 
 class VerticalSpace extends StatelessWidget {
-  const VerticalSpace(this.value) ;
- final double? value;
+  const VerticalSpace({super.key, required this.value});
+  final double? value;
   @override 
   Widget build(BuildContext context) {
     return SizedBox(

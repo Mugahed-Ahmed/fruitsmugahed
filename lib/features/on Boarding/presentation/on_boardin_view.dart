@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fruitsmugahed/features/on%20Boarding/presentation/widgets/on_boarding_body.dart';
 
 class OnBoardingView extends StatelessWidget {
-  const OnBoardingView({ Key? key }) : super(key: key);
+  const OnBoardingView({super.key});
 
   @override
   Widget build(BuildContext context) {

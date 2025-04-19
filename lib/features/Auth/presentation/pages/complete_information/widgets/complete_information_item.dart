@@ -3,8 +3,7 @@ import 'package:fruitsmugahed/core/widgets/custom_text_field.dart';
 import 'package:fruitsmugahed/core/widgets/space_widget.dart';
 
 class CompleteInfoItem extends StatelessWidget {
-  const CompleteInfoItem({Key? key, required this.text, this.inputType, this.maxLines})
-      : super(key: key);
+  const CompleteInfoItem({super.key, required this.text, this.inputType, this.maxLines});
   final String text;
   final TextInputType? inputType;
   final int? maxLines;
@@ -26,7 +25,7 @@ class CompleteInfoItem extends StatelessWidget {
               TextHeightBehavior(applyHeightToFirstAscent: false),
           textAlign: TextAlign.center,
         ),
-        VerticalSpace(2),
+        VerticalSpace(value: 2),
         CustomTextFormField(
           maxLines: maxLines,
           inputType: inputType,

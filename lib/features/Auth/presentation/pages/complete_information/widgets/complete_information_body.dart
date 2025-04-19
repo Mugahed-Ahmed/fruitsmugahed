@@ -4,7 +4,7 @@ import 'package:fruitsmugahed/core/widgets/space_widget.dart';
 import 'package:fruitsmugahed/features/Auth/presentation/pages/complete_information/widgets/complete_information_item.dart';
 
 class CompleteInformationBody extends StatelessWidget {
-  const CompleteInformationBody({Key? key}) : super(key: key);
+  const CompleteInformationBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,20 +12,20 @@ class CompleteInformationBody extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          VerticalSpace(10),
+          VerticalSpace(value: 10),
           CompleteInfoItem(
             text: 'Enter your name',
           ),
-          VerticalSpace(2),
+          VerticalSpace(value: 2),
           CompleteInfoItem(
             text: 'Enter your phone number',
           ),
-          VerticalSpace(2),
+          VerticalSpace(value: 2),
           CompleteInfoItem(
             maxLines: 5,
             text: 'Enter your address',
           ),
-          VerticalSpace(5),
+          VerticalSpace(value: 5),
           CustomGeneralButton(
             text: 'Login',
           )

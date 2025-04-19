@@ -4,13 +4,13 @@ import 'package:fruitsmugahed/features/on%20Boarding/presentation/on_boardin_vie
 import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
-  const SplashViewBody({Key? key}) : super(key: key);
+  const SplashViewBody({super.key});
 
   @override
-  _SplashViewBodyState createState() => _SplashViewBodyState();
+  SplashViewBodyState createState() => SplashViewBodyState();
 }
 
-class _SplashViewBodyState extends State<SplashViewBody>
+class SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   AnimationController? animationController;
   Animation<double>? fadingAnimation;
@@ -37,25 +37,23 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return Container(
-      child: Column(
-        children: [
-          Spacer(),
-          FadeTransition(
-            opacity: fadingAnimation!,
-            child: Text(
-              'Fruit Market',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 51,
-                fontWeight: FontWeight.bold,
-                color: const Color(0xffffffff),
-              ),
+    return Column(
+      children: [
+        Spacer(),
+        FadeTransition(
+          opacity: fadingAnimation!,
+          child: Text(
+            'Fruit Market',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 51,
+              fontWeight: FontWeight.bold,
+              color: const Color(0xffffffff),
             ),
           ),
-          Image.asset('assets/images/splash_view_image.png'),
-        ],
-      ),
+        ),
+        Image.asset('assets/images/splash_view_image.png'),
+      ],
     );
   }
 

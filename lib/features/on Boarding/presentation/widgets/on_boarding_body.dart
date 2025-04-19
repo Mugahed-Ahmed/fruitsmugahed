@@ -6,13 +6,13 @@ import 'package:fruitsmugahed/features/on%20Boarding/presentation/widgets/custom
 
 
 class OnBoardingViewBody extends StatefulWidget {
-  const OnBoardingViewBody({Key? key}) : super(key: key);
+  const OnBoardingViewBody({super.key});
 
   @override
-  _OnBoardingViewBodyState createState() => _OnBoardingViewBodyState();
+  OnBoardingViewBodyState createState() => OnBoardingViewBodyState();
 }
 
-class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
+class OnBoardingViewBodyState extends State<OnBoardingViewBody> {
   PageController? pageController;
 
   @override
